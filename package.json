@@ -1,5 +1,5 @@
 {
-  "name": "production_project",
+  "name": "blog",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -35,15 +35,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OlegSkar1/production_project.git"
+    "url": "git+https://github.com/ArturW1998/blog.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/OlegSkar1/production_project/issues"
+    "url": "https://github.com/ArturW1998/blog/issues"
   },
-  "homepage": "https://github.com/OlegSkar1/production_project#readme",
+  "homepage": "https://github.com/ArturW1998/blog#readme",
   "devDependencies": {
     "@babel/core": "^7.17.5",
     "@babel/plugin-transform-runtime": "^7.18.12",
@@ -109,6 +109,7 @@
     "lint-staged": "^13.0.3",
     "loki": "^0.31.1",
     "mini-css-extract-plugin": "^2.5.3",
+    "prettier": "^2.7.1",
     "react-refresh": "^0.12.0",
     "reg-cli": "^0.17.6",
     "regenerator-runtime": "^0.13.9",
