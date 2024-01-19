@@ -7,15 +7,15 @@ const toggleFunctionName = 'toggleFeature';
 const toggleComponentName = 'ToggleFeature';
 
 if (!removedFeatureName) {
-  throw new Error('Укажите название фича-флага');
+  throw new Error('Specify the name of the feature flag');
 }
 
 if (!featureState) {
-  throw new Error('Укажите состояние фичи (on или off)');
+  throw new Error('Specify the status of the feature (on or off)');
 }
 
 if (featureState !== 'on' && featureState !== 'off') {
-  throw new Error('Некорректное значение состояния фичи (on или off)');
+  throw new Error('Incorrect fixture state value (on or off)');
 }
 
 const project = new Project();
