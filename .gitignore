@@ -5,3 +5,5 @@ node_modules
 .loki/report.json
 /reporters/jest
 .idea
+
+.vercel

@@ -7,6 +7,14 @@ npm run start:dev or npm run start:dev:vite - run server + frontend project in d
 
 ---
 
+## Login data
+
+Check out [link](https://simple-react-blog-app.netlify.app/)
+
+- admin: `admin` / `123`
+- user: `user` / `123`
+- manager: `manager` / `123`
+
 ## Scripts
 
 - `npm run start` - Run frontend project on webpack dev server
@@ -31,6 +39,7 @@ npm run start:dev or npm run start:dev:vite - run server + frontend project in d
 - `npm run storybook` - Run Storybook
 - `npm run storybook:build` - Build Storybook
 - `npm run generate:slice` - Script to generate FSD slices
+- `npm run remove:feature` - Script for removing outdated design
 
 ---
 
