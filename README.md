@@ -170,7 +170,7 @@ toggleFeature({
 ```
 
 To remove feature from the code base you can use script from `./scripts/refactoring/removeFeature.ts`
-Use the command `npm run remove-feature feature-name on/off` to run the script
+Use the command `npm run remove:feature feature-name on/off` to run the script
 
 ---
 

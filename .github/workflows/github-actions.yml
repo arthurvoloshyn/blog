@@ -49,7 +49,7 @@ jobs:
         run: npm run test:unit
         if: always()
       - name: build storybook
-        run: npm run sb:build
+        run: npm run storybook:build
         if: always()
       - name: screenshot test
         run: npm run test:ui:ci
