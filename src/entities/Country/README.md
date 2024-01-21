@@ -1,9 +1,9 @@
 ## Entity Country
 
-Сущность, содержащая список стран
+Entity containing a list of countries
 
 - types  
-   `Country` - enum ряда стран
+  `Country` - enum of a number of countries
 
 - component  
-  `CountrySelect` - Компонент, содержащий селект стран
+  `CountrySelect` - Component containing country selections

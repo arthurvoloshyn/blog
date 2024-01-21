@@ -1,7 +1,7 @@
 import { configureStore, ReducersMapObject } from '@reduxjs/toolkit';
 
 import { createReducerManager } from './ReducerManager';
-import { StateSchema } from './StateSchema';
+import { StateSchema, ReduxWithReducerManager } from './StateSchema';
 
 import { counterReducer } from '@/entities/Counter';
 import { userReducer } from '@/entities/User';
@@ -32,9 +32,8 @@ export const CreateReduxStore = (initialState?: StateSchema, asyncReducers?: Red
           },
         },
       }).concat(rtkApi.middleware),
-  });
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  //@ts-ignore
+  }) as ReduxWithReducerManager;
+
   store.reducerManager = reducerManager;
 
   return store;

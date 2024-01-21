@@ -1,11 +1,11 @@
 ## Entity Notification
 
-### Сущность Уведомления, содержащая в себе айди юзера, заголовок, описание и опционально ссылку.
+### Entity Notification containing the user id, title, description and optionally a link.
 
 ---
 
 - types  
-  `NotificationType` - Тип уведомления
+  `NotificationType` - Notification Type
 
   - components  
-    `NotificationsList` - Компонент списка уведомлений
+    `NotificationsList` - Notification list component

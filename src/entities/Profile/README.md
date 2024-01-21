@@ -1,11 +1,11 @@
 ## Entity Profile
 
-Сущность описывает данные пользователя, выбранную валюту, страну, город, аватар и т.д
+Entity describes user data, selected currency, country, city, avatar, etc.
 
 ---
 
 - types  
-   `Profile` - Тип описывающий сущность профиля
+  `Profile` - Type describing the profile entity
 
 ```typescript
 interface Profile {
@@ -22,4 +22,4 @@ interface Profile {
 ```
 
 - components  
-  `ProfileCard` - карточка профиля, в которой можно просматривать и редактировать информацию о пользователе.
+  `ProfileCard` - a profile card where you can view and edit information about the user.

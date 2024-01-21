@@ -1710,7 +1710,7 @@
     {
       "articleId": "10",
       "userId": "1",
-      "text": "жесть какая то",
+      "text": "текст какой-то",
       "id": "nCnmtYb"
     },
     {
@@ -1763,7 +1763,7 @@
       "features": {
         "isArticleRatingEnabled": false,
         "isCounterEnabled": true,
-        "isAppRedesigned": false
+        "isAppRedesigned": true
       },
       "jsonSettings": {
         "theme": "app_theme_dark",

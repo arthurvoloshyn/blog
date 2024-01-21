@@ -1,11 +1,11 @@
 ## Entity Rating
 
-Сущность рейтинга, которая содержит оценку и опционально отзыв.
+A rating entity that contains a rating and optionally a review.
 
 ---
 
 - types  
-  `Rating` - Тип сущности
+  `Rating` - Entity type
 
 ```typescript
 interface Rating {
@@ -15,4 +15,4 @@ interface Rating {
 ```
 
 - components  
-  `RatingCard` - Карточка рейтинга
+  `RatingCard` - Rating Card

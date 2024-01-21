@@ -38,7 +38,7 @@ export const RecommendArticles: FC<RecommendArticlesProps> = memo((props) => {
       }
       on={
         <Card>
-          <ArticleList className={cls.articlesRedesigned} {...commonProps} />
+          <ArticleList className={cls['articles_redesigned']} {...commonProps} />
         </Card>
       }
     />

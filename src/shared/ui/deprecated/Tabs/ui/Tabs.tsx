@@ -16,7 +16,7 @@ interface TabsProps<T extends string> {
 const typedMemo: <T>(cb: T) => T = memo;
 
 /**
- * Устарел, используем новые компоненты из папки redesigned
+ * Outdated, use the new components from the redesigned folder
  * @deprecated
  */
 

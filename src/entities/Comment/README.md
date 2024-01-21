@@ -1,12 +1,12 @@
-## Сущность Комментария
+### Comment Entity
 
-### Нужна для создания комментариев
+### Needed to create comments
 
 ---
 
 - components  
-  `CommentCard` - Компонент карточки комментария
-  `CommentList` - Компонент списка карточек комментариев
+  `CommentCard` - Comment Card component
+  `CommentList` - Comment Card List component
 
 - types  
-   `Comment` - Тип, описывающий поля сущности
+  `Comment` - Type describing entity fields

@@ -1,6 +1,6 @@
 let profileId = '';
 
-describe('Тест редактирования профиля', () => {
+describe('Profile Edit Test', () => {
   beforeEach(() => {
     cy.login().then((body) => {
       profileId = body.id;
@@ -11,11 +11,11 @@ describe('Тест редактирования профиля', () => {
   afterEach(() => {
     cy.profileReset(profileId);
   });
-  it('Проверка успешного перехода на страницу профиля', () => {
+  it('Check if the profile page was successfully navigated to', () => {
     cy.getByTestId('ProfileCard.first').should('have.value', 'Test');
     cy.getByTestId('ProfileCard.lastname').should('have.value', 'User');
   });
-  it('Проверка редактирования профиля', () => {
+  it('Test Profile Edit', () => {
     const firstname = 'new Test User';
     const lastname = 'new User';
     cy.profileUpdate(firstname, lastname);

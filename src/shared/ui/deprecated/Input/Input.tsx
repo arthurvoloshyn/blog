@@ -18,7 +18,7 @@ interface InputProps extends HTMLInputProps {
 }
 
 /**
- * Устарел, используем новые компоненты из папки redesigned
+ * Outdated, use the new components from the redesigned folder
  * @deprecated
  */
 

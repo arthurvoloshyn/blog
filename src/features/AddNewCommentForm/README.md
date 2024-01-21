@@ -1,14 +1,14 @@
-## Feature AddNewCommentForm
+### Feature AddNewCommentForm
 
-### Фича добавления нового комментария
+### Feature to add a new comment
 
 ---
 
 - types  
-  `AddCommentSchema` - Тип, который содержит в себе текст и ошибку
+  `AddCommentSchema` - Type that contains the text and the error
 
   - components  
-    `AddNewCommentForm` - Компонент с логикой добавления нового комментария
+    `AddNewCommentForm` - Component with the logic of adding a new comment.
 
   - slice  
-    `addCommentReducer` - редюсер, который сохраняет в стейт переданный текст в компонент
+    `addCommentReducer` - A reducer that saves the passed text to the component into a state

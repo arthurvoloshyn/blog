@@ -12,7 +12,7 @@ export const AppRoutes = {
   ARTICLE_CREATE: 'article_create',
   FORBIDDEN: 'forbidden',
 
-  // несуществующий роут, должен быть последним
+  // a nonexistent route must be the last one
   NOT_FOUND: 'notFound',
 } as const;
 

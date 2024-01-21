@@ -1,31 +1,31 @@
-## Сущность статьи
+### Article Entity
 
-### данная сущность является базой для создания статьи
+### This entity is the basis for creating an article.
 
 #### Public api
 
 - Components
 
-`ArticleDetails` - компонент с информацией о статье
+`ArticleDetails` - component with information about the article
 
-`ArticleList` - компонент со списком статей
+`ArticleList` - component with the list of articles
 
 - selectors
 
-`getArticleData` - Селектор для получения информации о текущей открытой статье
+`getArticleData` - Selector to get information about the currently open article
 
-`getUserIsEditArticle` - Селектор для проверки на возможность редактирования статьи
+`getUserIsEditArticle` - Selector for checking whether an article can be edited.
 
-`getArticleError` - Селектор для получения ошибки
+`getArticleError` - Selector to get an error
 
 - slice
 
-`articleReducer` - Редюсер для работы с сущностью
+`articleReducer` - Reducer for working with an entity
 
 - types
 
-  - `Article` - Тип, описывающий статью
-  - `SortType` - Тип, описывающий по каким параметрам возможна сортировка
-  - `ArticleType` - Типы статей
-  - `ArticleView` - Тип, описывающий варианты отображения(сетка или лист)
-  - `ArticleSchema` - Тип, описывающий схему для редюсера
+  - `Article` - Type describing an article
+  - `SortType` - Type describing what parameters can be sorted by
+  - `ArticleType` - Types of articles
+  - `ArticleView` - Type describing display options (grid or sheet)
+  - `ArticleSchema` - Type describing the schema for the editor.

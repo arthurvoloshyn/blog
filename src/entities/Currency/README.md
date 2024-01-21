@@ -1,9 +1,9 @@
 ## Entity Currency
 
-Сущность, содержащая список валют
+Entity containing a list of currencies
 
 - types  
-  `Currency` - объект валют
+  `Currency` - currency object
 
 - component  
-  `CurrencySelect` - Компонент, содержащий селект валют
+  `CurrencySelect` - Component containing a selection of currencies

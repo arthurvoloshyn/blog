@@ -42,7 +42,7 @@ export const DynamicModuleLoader: React.FC<DynamicModuleLoaderProps> = (props) =
         });
       }
     };
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return <>{children}</>;
 };

@@ -1,27 +1,27 @@
 ## Entity User
 
-### Сущность пользователя
+### Entity User
 
 ---
 
 - types  
-  `Role` - пользователь может иметь одну или несколько из ролей
+  `Role` - the user can have one or more of the roles
 
-  > `[ ADMIN, MANAGER ]` - имеют доступ к защищенным маршрутам, к админ панели.  
-  > `USER` - не имеет доступа к защищенным маршрутам.
+  > `[ ADMIN, MANAGER ]` - have access to secure routes, admin panel.  
+  > `USER` - does not have access to protected routes.
 
-  `User` - Тип пользователя
+  `User` - User type
 
   ```typescript
   interface User {
     id: string;
     username: string;
     avatar?: string;
-    roles?: Role[];
+    roles?: role[];
   }
   ```
 
-  `UserSchema` - Тип, использующийся в редюсере
+  ``UserSchema` - The type used in the reduser
 
 ```typescript
 interface UserSchema {
@@ -31,12 +31,12 @@ interface UserSchema {
 ```
 
 - slice  
-  `userReducer` - редюсер, необходимый для логики авторизации пользователя
+  `userReducer` - the reducer required for the user authorization logic
 
 - selectors
 
-> `isAdminRole` - return true если роль Admin  
-> `isManagerRole` - return true если роль Manager  
-> `getRoles` - Селектор получения ролей пользователя  
-> `getUserInited` - проверяет авторизован ли пользователь
-> `getUserAuthData` - получает данные пользователя
+> `isAdminRole` - return true if the role is Admin  
+> `isManagerRole` - return true if the role is Manager  
+> `getRoles` - Selector for getting user roles  
+> `getUserInited` - Checks if the user is authorized
+> `getUserAuthData` - gets user data

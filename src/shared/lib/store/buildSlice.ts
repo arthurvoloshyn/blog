@@ -11,7 +11,7 @@ export const buildSlice = <State, CaseReducers extends SliceCaseReducers<State>,
   const useActions = (): typeof slice.actions => {
     const dispatch = useAppDispatch();
 
-    // @ts-ignore
+    // @ts-expect-error bindActionCreators from redux has the wrong type when using thunk actions, so we cast to the correct type
     return useMemo(() => bindActionCreators(slice.actions, dispatch), [dispatch]);
   };
 

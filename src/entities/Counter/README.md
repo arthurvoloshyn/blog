@@ -1,3 +1,3 @@
-## Сущность Counter
+## Counter entity
 
-тестовая сущность, которая инкрементирует счетчик
+test entity that increments the counter

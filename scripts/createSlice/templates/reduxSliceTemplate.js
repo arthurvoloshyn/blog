@@ -18,20 +18,20 @@ export const ${sliceName}Slice = createSlice({
            
         },
     },
-    // extraReducers: (builder) => {
-    //     builder
-    //         .addCase(, (state) => {
-    //             state.error = undefined;
-    //             state.isLoading = true;
-    //         })
-    //         .addCase(, (state) => {
-    //             state.isLoading = false;
-    //         })
-    //         .addCase(, (state, action) => {
-    //             state.isLoading = false;
-    //             state.error = action.payload;
-    //         });
-    // },
+    extraReducers: (builder) => {
+        builder
+            .addCase(, (state) => {
+                state.error = undefined;
+                state.isLoading = true;
+            })
+            .addCase(, (state) => {
+                state.isLoading = false;
+            })
+            .addCase(, (state, action) => {
+                state.isLoading = false;
+                state.error = action.payload;
+            });
+    },
 });
 
 export const { actions: ${sliceName}Actions } = ${sliceName}Slice;

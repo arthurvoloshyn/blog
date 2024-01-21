@@ -12,7 +12,7 @@ module.exports = async (layer, sliceName) => {
         try {
             await fs.mkdir(resolveUIPath());
         } catch (e) {
-            console.log('Не удалось создать UI директорию');
+            console.log('Failed to create UI directory');
         }
     };
 
@@ -33,7 +33,7 @@ module.exports = async (layer, sliceName) => {
                 styleTemplate(componentName),
             );
         } catch (e) {
-            console.log('Не удалось создать компонент');
+            console.log('Failed to create a component');
         }
     };
 

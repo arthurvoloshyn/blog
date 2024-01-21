@@ -35,8 +35,8 @@ JustifyEnd.args = {
   justify: 'end',
 };
 
-export const JustifyBeetwen = Template.bind({});
-JustifyBeetwen.args = {
+export const JustifyBetween = Template.bind({});
+JustifyBetween.args = {
   justify: 'between',
 };
 

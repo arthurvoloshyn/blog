@@ -14,6 +14,7 @@
     "build:dev": "webpack --env mode=development",
     "build:dev:analyze": "webpack --env mode=development analyze",
     "lint:ts": "eslint \"**/*.{ts,tsx}\"",
+    "tsc": "tsc --noEmit",
     "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
     "lint:scss": "stylelint \"**/*.scss\"",
     "lint:scss:fix": "stylelint \"**/*.scss\" --fix",

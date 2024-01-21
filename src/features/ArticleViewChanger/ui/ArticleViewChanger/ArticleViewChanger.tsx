@@ -69,14 +69,14 @@ export const ArticleViewChanger: FC<ArticleViewChangerProps> = memo((props) => {
         </div>
       }
       on={
-        <Card padding='8' className={classNames(cls.articleViewChangerRedesigned, [className], {})}>
+        <Card padding='8' className={classNames(cls['article-view-changer_redesigned'], [className], {})}>
           <HStack gap='8'>
             {viewTypes.map((viewType) => (
               <Icon
                 key={viewType.view}
                 Svg={viewType.icon}
                 className={classNames('', [], {
-                  [cls.notSelectedRedesigned]: viewType.view !== view,
+                  [cls['not-selected_redesigned']]: viewType.view !== view,
                 })}
                 clickable
                 onClick={onClick(viewType.view)}

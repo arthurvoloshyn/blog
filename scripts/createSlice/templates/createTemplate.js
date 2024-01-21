@@ -8,7 +8,7 @@ module.exports = async (layer, sliceName) => {
     try {
         await fs.mkdir(resolveRoot('src', layer, sliceName));
     } catch (e) {
-        console.log(`не удалось создать директорию для слайса${sliceName}`);
+        console.log(`Failed to create a directory for the slice ${sliceName}`);
     }
 
     await createModel(layer, sliceName);

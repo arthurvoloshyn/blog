@@ -5,5 +5,5 @@ export const useInitEffect = (cb: () => void) => {
     if (__PROJECT__ !== 'storybook') {
       cb();
     }
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 };

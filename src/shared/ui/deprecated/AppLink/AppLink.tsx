@@ -14,7 +14,7 @@ interface AppLinkProps extends LinkProps {
 }
 
 /**
- * Устарел, используем новые компоненты из папки redesigned
+ * Outdated, use the new components from the redesigned folder
  * @deprecated
  */
 

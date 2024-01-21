@@ -24,7 +24,7 @@ describe('EditableProfileCard.cy.ts', () => {
     );
   });
 
-  it('Проверка успешного перехода на страницу профиля', () => {
+  it('Checking if you have successfully navigated to the profile page', () => {
     cy.getByTestId('ProfileCard.first').should('have.value', 'Test');
     cy.getByTestId('ProfileCard.lastname').should('have.value', 'User');
   });

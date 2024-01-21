@@ -34,7 +34,7 @@ export const ProfileCardDeprecated: React.FC<ProfileCardProps> = (props) => {
 
   if (isLoading) {
     return (
-      <HStack justify='center' className={classNames(cls.profileCardDeprecated, [className, cls.loading], {})}>
+      <HStack justify='center' className={classNames(cls['profile-card_deprecated'], [className, cls.loading], {})}>
         <Loader />
       </HStack>
     );
@@ -42,7 +42,7 @@ export const ProfileCardDeprecated: React.FC<ProfileCardProps> = (props) => {
 
   if (error) {
     return (
-      <VStack justify='center' className={classNames(cls.profileCardDeprecated, [className, cls.error], {})}>
+      <VStack justify='center' className={classNames(cls['profile-card_deprecated'], [className, cls.error], {})}>
         <TextDeprecated title={t('profile_title_error')} theme='error' text={t('profile_text_error')} align='center' />
       </VStack>
     );
@@ -53,7 +53,7 @@ export const ProfileCardDeprecated: React.FC<ProfileCardProps> = (props) => {
       tagname='article'
       gap='16'
       align='normal'
-      className={classNames(cls.profileCardDeprecated, [className], { [cls.editable]: !readonly })}
+      className={classNames(cls['profile-card_deprecated'], [className], { [cls.editable]: !readonly })}
     >
       {data?.avatar && <Avatar size={100} src={data.avatar} alt={t('avatar', { ns: 'translation' })} />}
       <InputDeprecated

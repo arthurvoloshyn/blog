@@ -1,6 +1,6 @@
 let articleId = '';
 
-describe('Пользователь открывает страницу со статьей', () => {
+describe('User opens an article page', () => {
   beforeEach(() => {
     cy.login();
     cy.createArticle().then((body) => {
@@ -13,20 +13,20 @@ describe('Пользователь открывает страницу со ст
     cy.removeArticle(articleId);
   });
 
-  it('И тестовая статья открывается', () => {
+  it('And the test article opens', () => {
     cy.getByTestId('ArticleDetails.Info').should('exist');
   });
-  it('И видит список рекомендаций', () => {
+  it('And sees a list of recommendations', () => {
     cy.getByTestId('RecommendArticles').should('exist');
   });
-  it('И оставляет комментарий', () => {
+  it('And leaves a comment', () => {
     const text = 'test comment for e2e';
     cy.getByTestId('ArticleDetails.Info');
     cy.getByTestId('AddNewCommentForm').scrollIntoView();
     cy.addComment(text);
     cy.getByTestId(`CommentCard.${text}`).should('exist');
   });
-  it('И оставляет отзыв', () => {
+  it('And leaves a review', () => {
     const rateCount = 4;
     const feedback = 'good article';
 
@@ -35,7 +35,7 @@ describe('Пользователь открывает страницу со ст
     cy.addRate(rateCount, feedback);
     cy.get('[data-selected=true]').should('have.length', rateCount);
   });
-  it('И ставит оценку, пример со стабом(фикстура)', () => {
+  it('And puts a grade, example with stab (fixture)', () => {
     const rateCount = 4;
     const feedback = 'good article';
 
