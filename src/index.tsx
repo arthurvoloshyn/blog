@@ -11,7 +11,11 @@ import './shared/config/i18n/i18n';
 
 const container = document.getElementById('root');
 
-const root = createRoot(container!);
+if (!container) {
+  throw new Error("There is no DOM element with a 'root' ID.");
+}
+
+const root = createRoot(container);
 
 root.render(
   <StoreProvider>
