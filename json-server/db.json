@@ -1763,7 +1763,7 @@
       "features": {
         "isArticleRatingEnabled": false,
         "isCounterEnabled": true,
-        "isAppRedesigned": true
+        "isAppRedesigned": false
       },
       "jsonSettings": {
         "theme": "app_theme_dark",
