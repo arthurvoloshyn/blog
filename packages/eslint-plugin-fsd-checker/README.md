@@ -1,4 +1,4 @@
-# eslint-plugin-fsd-checker
+# @blog/eslint-plugin-fsd-checker
 
 plugin for fsd paths and slices
 
@@ -10,20 +10,20 @@ You'll first need to install [ESLint](https://eslint.org/):
 npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-fsd-checker`:
+Next, install `@blog/eslint-plugin-fsd-checker`:
 
 ```sh
-npm install eslint-plugin-fsd-checker --save-dev
+npm install @blog/eslint-plugin-fsd-checker --save-dev
 ```
 
 ## Usage
 
-Add `fsd-checker` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `@blog/fsd-checker` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
     "plugins": [
-        "fsd-checker"
+        "@blog/fsd-checker"
     ]
 }
 ```
@@ -34,7 +34,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "fsd-checker/rule-name": 2
+        "@blog/fsd-checker/rule-name": 2
     }
 }
 ```
