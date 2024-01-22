@@ -30,20 +30,20 @@ module.exports = {
     'import',
     'i18next',
     'prettier',
-    'olegskar-fsd-checker',
+    '@blog/fsd-checker',
     'unused-imports',
   ],
   rules: {
     '@typescript-eslint/no-namespace': 'off',
-    'olegskar-fsd-checker/paths-checker': ['error', { alias: '@' }],
-    'olegskar-fsd-checker/public-api-imports': [
+    '@blog/fsd-checker/paths-checker': ['error', { alias: '@' }],
+    '@blog/fsd-checker/public-api-imports': [
       'error',
       {
         alias: '@',
         testFilesPatterns: ['**/*.test.ts', '**/*.stories.tsx', '**/StoreDecorator.tsx'],
       },
     ],
-    'olegskar-fsd-checker/layer-imports': [
+    '@blog/fsd-checker/layer-imports': [
       'error',
       { alias: '@', ignoreImportPatterns: ['**/StoreProvider', '**/ThemeProvider', '**/router/**', '**/testing'] },
     ],
