@@ -8,7 +8,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "deploy:dev": "vercel",
+    "deploy:prod": "vercel --prod"
   },
   "repository": {
     "type": "git",

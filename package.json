@@ -14,6 +14,8 @@
     "build:prod:analyze": "webpack --env mode=production analyze",
     "build:dev": "webpack --env mode=development",
     "build:dev:analyze": "webpack --env mode=development analyze",
+    "deploy:dev:server": "npm run deploy:dev --workspace=@blog/json-server",
+    "deploy:prod:server": "npm run deploy:prod --workspace=@blog/json-server",
     "lint:ts": "eslint \"**/*.{ts,tsx}\"",
     "tsc": "tsc --noEmit",
     "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
