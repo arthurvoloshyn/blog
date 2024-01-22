@@ -1,0 +1,25 @@
+{
+  "name": "@blog/json-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "json-server": "^0.17.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArturW1998/blog.git",
+    "directory": "packages/json-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArturW1998/blog/issues"
+  },
+  "homepage": "https://github.com/ArturW1998/blog#readme"
+}
