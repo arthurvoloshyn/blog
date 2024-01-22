@@ -5,9 +5,9 @@ ARG APP_DIR=app
 RUN mkdir -p ${APP_DIR}
 WORKDIR ${APP_DIR}
 
-# Installing dependencies in production
+# Dependency installation
 COPY package*.json ./
-RUN npm install --production
+RUN npm install
 
 # Copying project files
 COPY . .
