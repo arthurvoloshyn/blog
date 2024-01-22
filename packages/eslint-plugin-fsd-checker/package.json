@@ -1,6 +1,6 @@
 {
   "name": "@blog/eslint-plugin-fsd-checker",
-  "version": "0.0.17",
+  "version": "1.0.0",
   "description": "plugin for fsd paths and slices",
   "repository": {
     "type": "git",
