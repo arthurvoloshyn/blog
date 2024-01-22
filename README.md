@@ -1,3 +1,10 @@
+## To clone
+
+- You'll need to have [git](https://git-scm.com/), [node v16+](https://nodejs.org/en/) installed in your
+  system.
+
+`git clone https://github.com/ArturW1998/blog.git`
+
 ## Run the project
 
 ```

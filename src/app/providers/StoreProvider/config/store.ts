@@ -1,7 +1,7 @@
 import { configureStore, ReducersMapObject } from '@reduxjs/toolkit';
 
 import { createReducerManager } from './ReducerManager';
-import { StateSchema, ReduxWithReducerManager } from './StateSchema';
+import { StateSchema } from './StateSchema';
 
 import { counterReducer } from '@/entities/Counter';
 import { userReducer } from '@/entities/User';
@@ -32,8 +32,9 @@ export const CreateReduxStore = (initialState?: StateSchema, asyncReducers?: Red
           },
         },
       }).concat(rtkApi.middleware),
-  }) as ReduxWithReducerManager;
+  });
 
+  // @ts-expect-error put the reducer manager on the store so it is easily accessible
   store.reducerManager = reducerManager;
 
   return store;
