@@ -6,7 +6,7 @@ const { isRelativePath, getNormalizedCurrentFile } = require('../helpers');
 module.exports = {
   meta: {
     messages: {
-      someMessageId: 'В рамках одного модуля путь должен быть относительным',
+      someMessageId: 'Within a single module, the path must be relative',
     },
     type: 'suggestion',
     docs: {

@@ -6,9 +6,9 @@ const micromatch = require('micromatch');
 module.exports = {
   meta: {
     messages: {
-      publicApi: 'Абсолютный импорт разрешен только из PublicApi (index.ts)',
+      publicApi: 'Absolute import is only allowed from PublicApi (index.ts)',
       testingPublicApi:
-        'Тестовые данные необходимо импортировать из PublicApi (testing.ts)',
+        'Test data should be imported from PublicApi (testing.ts)',
     },
     type: 'problem',
     docs: {

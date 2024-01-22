@@ -1,4 +1,8 @@
-# checking absolute paths (`paths-checker`)
+# Checking absolute paths in fsd slices (`@blog/fsd-checker/paths-checker`)
+
+🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
+
+<!-- end auto-generated rule header -->
 
 Please describe the origin of the rule here.
 

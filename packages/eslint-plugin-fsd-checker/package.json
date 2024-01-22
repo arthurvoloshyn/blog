@@ -10,6 +10,11 @@
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "./lib/rules/**",
+    "./lib/helpers/**",
+    "./lib/index.js"
+  ],
   "keywords": [
     "eslint",
     "eslintplugin",

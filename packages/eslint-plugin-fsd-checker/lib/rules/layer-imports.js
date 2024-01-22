@@ -11,7 +11,7 @@ module.exports = {
   meta: {
     messages: {
       layerImports:
-        'Слой может импортировать в себя только нижележащие слои (shared, entities, features, widgets, pages, app)',
+        'A layer can only import underlying layers (shared, entities, features, widgets, pages, app) into itself',
     },
     type: 'suggestion',
     docs: {

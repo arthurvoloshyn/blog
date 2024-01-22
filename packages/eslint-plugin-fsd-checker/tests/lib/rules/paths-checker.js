@@ -32,7 +32,7 @@ ruleTester.run('paths-checker', rule, {
       filename:
         'C:\\study\\production_project\\src\\features\\EditableProfileCard\\ui\\EditableProfileCard\\EditableProfileCard.tsx',
       code: "import { fetchProfileData } from 'features/EditableProfileCard/model/services/fetchProfileData/fetchProfileData'",
-      errors: [{ message: 'В рамках одного модуля путь должен быть относительным' }],
+      errors: [{ message: 'Within a single module, the path must be relative' }],
       output:
         "import { fetchProfileData } from '../../model/services/fetchProfileData/fetchProfileData'",
     },
@@ -40,7 +40,7 @@ ruleTester.run('paths-checker', rule, {
       filename:
         'C:\\study\\production_project\\src\\features\\EditableProfileCard\\ui\\EditableProfileCard\\EditableProfileCard.tsx',
       code: "import { fetchProfileData } from '@/features/EditableProfileCard/model/services/fetchProfileData/fetchProfileData'",
-      errors: [{ message: 'В рамках одного модуля путь должен быть относительным' }],
+      errors: [{ message: 'Within a single module, the path must be relative' }],
       options: [
         {
           alias: '@',
@@ -53,7 +53,7 @@ ruleTester.run('paths-checker', rule, {
       filename:
         'C:\\study\\production_project\\src\\features\\EditableProfileCard\\EditableProfileCard.tsx',
       code: "import { fetchProfileData } from '@/features/EditableProfileCard/fetchProfileData'",
-      errors: [{ message: 'В рамках одного модуля путь должен быть относительным' }],
+      errors: [{ message: 'Within a single module, the path must be relative' }],
       options: [
         {
           alias: '@',

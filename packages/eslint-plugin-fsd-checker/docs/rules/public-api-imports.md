@@ -1,4 +1,8 @@
-# Prohibits imports not from public api (`public-api-imports`)
+# Prohibits imports not from public api (`@blog/fsd-checker/public-api-imports`)
+
+🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
+
+<!-- end auto-generated rule header -->
 
 Please describe the origin of the rule here.
 

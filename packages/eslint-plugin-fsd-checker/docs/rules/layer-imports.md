@@ -1,4 +1,6 @@
-# prevent imports from upper layers (`layer-imports`)
+# Prevent imports from upper layers (`@blog/fsd-checker/layer-imports`)
+
+<!-- end auto-generated rule header -->
 
 Please describe the origin of the rule here.
 
